@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de Imagens e audios</title>
+</head>
+<body>
+<h1>Adaptação de imagens</h1>
+<p>Agora iremos mostrar a adaptação de imagens, para isso é preciso que você aumente e diminua o tamanho da sua tela para perceber a diferença</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="Imagens/foto-g.png" alt="Foto Flexivel">
+</picture>
+
+<h1>Inserindo musica no site</h1>
+<p>Agora iremos ouvir um rock do bom, disponivel em 3 formatos, mp3, ogg e wav. Para rodar em qualquer navegador!</p>
+
+<audio src="midia/musica.mp3" preload="metadata" controls autoplay loop>
+    <source src="midia/musica.mp3" type="audio/mpeg">
+    <source src="midia/musica.ogg" type="audio/ogg">
+    <source src="midia/musica.wav" type="audio/wav">
+</audio>
+</body>
+</html>
