@@ -8,17 +8,31 @@
 <body>
     <h1>Exemplo de Formulario</h1>
     
-    <form action="">
+    <form action="" method="get" autocomplete="on">
+
         <fieldset>
-            <legend></legend>
+            <legend>Sexo</legend>
             <p><label for=""></label>
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
+                <input type="radio" name="sexo" id="masculino" value="m"><label for="masculino">Masculino</label> <br>
+                <input type="radio" name="sexo" id="feminino" value="f"><label for="feminino">Feminino</label><br>
             </p>
         </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p><label for=""></label>
+                <input type="checkbox" name="basquete" id="basquete"><label for="basquete">Basquete</label> <br>
+                <input type="checkbox" name="futebol" id="futebol"><label for="futebol">Futebol</label><br>
+                <input type="checkbox" name="natacao" id="natacao"><label for="natacao">Natacao</label><br>
+                <input type="checkbox" name="tenis" id="tenis"><label for="tenis">Tenis</label><br>
+                <input type="checkbox" name="volei" id="volei"><label for="volei">Volei</label><br>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>

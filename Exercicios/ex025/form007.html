@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="post" autocomplete="on">
+
+        <p>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <br>
+            <label for="profissao">Profissão</label>
+            <input type="text" name="profissao" id="profissao" list="listaprofissao">
+            <datalist id="listaprofissao">
+                <option>TI</option>
+                <option>Dev</option>
+                <option>Engenheiro de Software</option>
+            </datalist> 
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10">Envie Sua mensagem: </textarea>
+            <br>
+                <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
